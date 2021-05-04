@@ -7,4 +7,4 @@ before_install:
   - docker build -t ravikiranyadav/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run ravikiranyadav/docker-react echo "hello World"
+  - docker run ravikiranyadav/docker-react
