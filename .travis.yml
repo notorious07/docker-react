@@ -5,5 +5,8 @@ services:
 before_install:
   - docker build -t ravikiranyadav/docker-react -f Dockerfile.dev .
 
+install:
+  - travis_wait 20
+
 script:
-  - travis_wait docker run ravikiranyadav/docker-react npm run test -- --coverage
+  - docker run ravikiranyadav/docker-react npm run test -- --coverage
