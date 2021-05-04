@@ -9,4 +9,4 @@ install:
   - travis_wait
 
 script:
-  - docker run ravikiranyadav/docker-react npm run test -- --coverage
+  - docker run ravikiranyadav/docker-react npm run test
