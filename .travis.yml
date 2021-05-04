@@ -6,4 +6,4 @@ before_install:
   - docker build -t ravikiranyadav/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run ravikiranyadav/docker-react npm run test -- --coverage
+  - travis_wait docker run ravikiranyadav/docker-react npm run test -- --coverage
